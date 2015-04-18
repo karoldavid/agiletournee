@@ -1,0 +1,438 @@
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ *
+ * Common
+ *
+ */
+
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+ header {
+   width: 100%;
+   height: 50px;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   background-color: #000;
+   -webkit-transition: height 0.3s;
+   -moz-transition: height 0.3s;
+   -ms-transition: height 0.3s;
+   -o-transition: height 0.3s;
+   transition: height 0.3s;
+   }
+header h1#logo {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  }
+
+header.smaller {
+  height: 30px;
+  }
+
+header.smaller h1#logo {
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  }
+
+header.smaller .header__menu {
+    padding: 0.35em;
+  }
+
+header.smaller .header__menu svg {
+    width: 16px;
+  }
+
+
+/*.header {
+  width: 100%;
+  min-height: 50px;
+  background-color: #000;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}*/
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  padding-top: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 19%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("../images/banner.jpeg");
+  background-size: cover;
+  height: 300px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news {
+  max-height: 300px;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+.news__title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.top-news__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Sport touring-info
+ *
+ */
+
+.touring-info {
+  padding-top: 1em;
+  flex-grow: 1;
+}
+
+.touring-info__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.touring-info__table th,
+.touring-info__table td {
+  padding: 1em;
+}
+
+.touring-info__table th {
+  color: #fff;
+  font-weight: 300;
+  background-color: #78909C;
+}
+
+.touring-info__table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.touring-info__table tr:nth-child(even) td {
+  background-color: #eceff1;
+}
+
+.touring-info__table td.winner {
+  font-weight: bold;
+}
+
+.touring-info__table td:nth-child(3) {
+  text-align: right;
+}
+
+.touring-info__table td:nth-child(2),
+.touring-info__table td:nth-child(5) {
+  text-align: center;
+}
+
+/*
+ *
+ * rss
+ *
+ */
+
+.rss {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.rss__location {
+  display: block;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.rss__desc {
+  display: block;
+  font-size: 1.2em;
+}
+
+.rss__today {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.rss__today__image {
+  vertical-align: middle
+}
+
+.rss__today__temp {
+  font-size: 3em;
+}
+
+.rss__today__deg {
+  font-size: 2em;
+  display: inline;
+}
+
+.rss__next__item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.rss__next__item span {
+  display: block;
+}
+
+.rss__next__image {
+  width: 100%;
+}
+
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+.recent-news {
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
